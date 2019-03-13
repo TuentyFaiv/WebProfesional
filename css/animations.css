@@ -1,0 +1,52 @@
+.fadeIn{
+  animation-duration: 4s;
+  animation-fill-mode: both;
+  animation-name: fadeIn;
+}
+
+.fadeInDown{
+  animation-duration: 1s;
+  animation-fill-mode: both;
+  animation-name: fadeInDown;
+}
+
+.fadeInUp{
+  animation-duration: 1s;
+  animation-fill-mode: both;
+  animation-name: fadeInUp;
+}
+
+@keyframes fadeIn{
+  from{
+    opacity: 0;
+  }
+
+  to{
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInDown{
+  from{
+    opacity: 0;
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+  }
+
+  to{
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes fadeInUp{
+  from{
+    opacity: 0;
+    transform: translate3d(0, 100%, 0);
+  }
+
+  to{
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
